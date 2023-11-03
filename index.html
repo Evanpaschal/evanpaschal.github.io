@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>REDACTR</h1>
+    <textarea
+      id="originalText"
+      placeholder="Enter your text here..."
+    ></textarea>
+    <input
+      type="text"
+      id="wordsToRedact"
+      placeholder="Words to redact (space-separated)"
+    />
+    <input
+      type="text"
+      id="replacementChar"
+      placeholder="Replacement character (e.g., *, ?, -, _)"
+    />
+    <button id="redactButton" onclick="redactText()">Redact Now</button>
+    <div id="result"></div>
+    <div id="stats"></div>
+    <script src="index.js"></script>
+
+    <footer>
+      &trade; Olisaemeka Nwosu 2023
+    </footer>
+  </body>
+</html>
